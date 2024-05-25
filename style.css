@@ -1,0 +1,83 @@
+body {
+  background-color: #f7ecde;
+  font-style: normal;
+}
+h2 {
+  font-family: Pacifico, cursive;
+}
+.inputs p {
+  font-family: Righteous, cursive;
+}
+.inputs p {
+  font-size: 25px;
+  line-height: 30px;
+}
+.inputs p {
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2,
+.inputs p {
+  font-family: 500;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 60px;
+}
+h2::after {
+  content: "";
+  width: 24%;
+  height: 20px;
+  background-color: #fec260;
+  position: absolute;
+  bottom: 0px;
+  left: 38.3%;
+  right: 0px;
+  z-index: -99999;
+  transition: height 0.3s 0s ease-in-out;
+}
+h2:hover::after {
+  height: 40px;
+}
+
+.inputs {
+  border: dotted 2.5px black;
+  border-left: none;
+  border-right: none;
+}
+label {
+  transform: translateX(-505px);
+}
+.inputs .btn {
+  background-color: #d1512d;
+}
+.inputs .btn:hover {
+  background-color: rgb(197, 26, 26);
+}
+.last-div {
+  justify-content: space-around;
+}
+span {
+  width: 20px;
+  height: 20px;
+}
+.second {
+  background-color: orange;
+}
+.rules i {
+  color: rgb(136, 9, 9);
+}
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "PT Sans Caption", sans-serif;
+}
+.head {
+  font-family: "Bree Serif", serif;
+}
+.box-info {
+  top: 25%;
+  left: 30%;
+}

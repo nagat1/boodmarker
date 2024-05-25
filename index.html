@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cedarville+Cursive&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="media.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-12 text-center">
+        <h2 class="text-black pt-5 position-relative z-3 mb-4 ">Bookmarker</h2>
+        <div
+          class="inputs position-relative mt-5 d-flex flex-column align-items-center justify-content-center pt-3 "
+        >
+          <div class="d-flex">
+            <p class="p-1 pt-3">
+              <i class="fa-solid fa-bookmark fa-lg"></i>
+              Bookmark your favorite sites
+              <i class="fa-solid fa-bookmark fa-lg"></i>
+            </p>
+          </div>
+          <div class="mb-3 w-100
+          ">
+            <label for="input1" class="form-label fw-semibold "
+              ><i class="fa-solid fa-book-bookmark fa-sm"></i>&thinsp;Site Name</label
+            >
+            <input
+              type="text"
+              class="form-control "
+              id="input1"
+              placeholder="Boodmark Name"
+              oninput="validate(this)"
+            />
+            <div class="alert alert-danger p-2 d-none">
+            <small>the name must have at least 3chars </small>
+          </div>
+          </div>
+          <div class="mb-3 w-100 mt-1
+          ">
+            <label for="input2" class="form-label fw-semibold "
+              ><i class="fa-solid fa-link fa-sm"></i>&thinsp;Site URL</label
+            >
+            <input
+            type="email"
+              class="form-control "
+              id="input2"
+              placeholder="Website URL"
+              oninput="validate(this)"
+            ></input>
+            <div class="alert alert-danger p-2 d-none">
+              <small class="fw-bolder">Invalid URL</small>
+            </div>
+          </div>
+          <button type="button" class="btn px-5 py-2  text-white mt-2 mb-4" id="button">Submit</button>
+        </div>
+        <div  id="result">
+       
+     
+      </div>
+      </div>
+    </div>
+   
+      <div class="container ">
+        <div class="box-info position-absolute   h-100 justify-content-center align-items-center d-none" id="ele"  >
+          <div class="box-conent bg-white p-4 rounded-2 shadow-lg">
+            <header class="box-header w-100 d-flex justify-content-between align-items-center mb-4">
+              <div class="circles d-flex">
+                <span class="rounded-circle bg-danger me-2"></span>
+                <span class="second rounded-circle  me-2"></span>
+                <span class="rounded-circle bg-success me-2"></span>
+              </div>
+              <button class="btn border-0" id="closeBtn" type="button"onclick="display4()" >
+                <i class="fa-solid fa-xmark close fa-xl"></i>
+              </button>
+            </header>
+            <p class="head m-0 pb-2 fs-5 fw-bolder ">
+              Site Name or Url is not valid, Please follow the<br> rules below :
+            </p>
+            <ol class="rules list-unstyled m-0 py-1">
+              <li class="py-2 d-flex">
+                <i class="fa-regular fa-circle-right pe-1 "></i>
+                <h3>Site name must
+                  contain at least 3 characters</h3>
+              </li >
+              <li class="py-2 d-flex">
+                <i class="fa-regular fa-circle-right pe-1"></i><h3>Site URL must be a
+                  valid one</h3>
+              </li>
+            </ol>
+        </div>
+        </div>
+      </div>
+   
+  
+
+    <script src="s.js"></script>
+  </body>
+</html>
